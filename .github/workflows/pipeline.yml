@@ -26,5 +26,7 @@ jobs:
       run: echo 'DyNaMiXx7'
     - name: Start application
       run: npm start &
+    - name: Install Playwright browsers
+      run: npx playwright install
     - name: Run Integration tests
       run: npm run test:ui
